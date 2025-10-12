@@ -1,0 +1,8 @@
+# --- Go ビルド生成物 ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
