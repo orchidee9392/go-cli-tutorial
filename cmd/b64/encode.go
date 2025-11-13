@@ -39,8 +39,3 @@ var EncodeCmd = &cobra.Command{
 	Args:  cobra.MaximumNArgs(1),
 	RunE:  runEncode,
 }
-
-func init() {
-	EncodeCmd.Flags().StringP("in", "i", "", "入力ファイルパス")
-	EncodeCmd.Flags().StringP("out", "o", "", "出力ファイルパス")
-}

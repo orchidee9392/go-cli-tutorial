@@ -10,6 +10,9 @@ var B64Cmd = &cobra.Command{
 
 //サブコマンドの登録
 func init(){
+	B64Cmd.PersistentFlags().StringP("in", "i", "", "入力ファイルパス")
+	B64Cmd.PersistentFlags().StringP("out", "o", "", "出力ファイルパス")
+
 	B64Cmd.AddCommand(EncodeCmd)
 	B64Cmd.AddCommand(DecodeCmd)
 }

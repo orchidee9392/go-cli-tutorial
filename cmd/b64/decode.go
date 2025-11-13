@@ -38,8 +38,3 @@ var DecodeCmd = &cobra.Command{
 	Args:  cobra.MaximumNArgs(1),
 	RunE:  runDecode,
 }
-
-func init() {
-	DecodeCmd.Flags().StringP("in", "i", "", "入力ファイルパス")
-	DecodeCmd.Flags().StringP("out", "o", "", "出力ファイルパス")
-}
